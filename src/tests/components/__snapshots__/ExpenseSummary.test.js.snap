@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match expense summary snapshot for 0 expenses 1`] = `
+<Connect(ExpenseSummary)
+  expenses={Array []}
+/>
+`;
+
+exports[`should match expense summary snapshot for 1 expense 1`] = `
+<Connect(ExpenseSummary)
+  expenses={
+    Object {
+      "amount": 195,
+      "createdOn": 0,
+      "description": "Gum",
+      "id": "1",
+      "note": "",
+    }
+  }
+/>
+`;
+
+exports[`should match expense summary snapshot for fixture expenses 1`] = `
+<Connect(ExpenseSummary)
+  expenses={
+    Array [
+      Object {
+        "amount": 195,
+        "createdOn": 0,
+        "description": "Gum",
+        "id": "1",
+        "note": "",
+      },
+      Object {
+        "amount": 109500,
+        "createdOn": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      },
+      Object {
+        "amount": 4500,
+        "createdOn": 345600000,
+        "description": "Credit Card",
+        "id": "3",
+        "note": "",
+      },
+    ]
+  }
+/>
+`;
